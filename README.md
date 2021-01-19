@@ -61,7 +61,7 @@ export default function App() {
 | `repeatDelay`  | `number` | Delay before animation auto replay.| `2000` |
 | `labelContainerStyle`  | `object` | Styles to be applied to label container.| |
 | `labelTextStyle`  | `object` | Styles to be applied to label text component.| |
-\
+
 Default label container style:
 ```
 {
