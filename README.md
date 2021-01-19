@@ -22,10 +22,27 @@ Import button and use it in your app:
 import CyberButton from 'react-native-cyberpunk-button';
 
 export default function App() {
+  const btnRef = useRef();
+
   return (
     <View>
       ...
-      <CyberButton label="cyberpunk_"  buttonHeight={80}/>
+
+      <View>
+        <Text>autoplay animation:</Text>
+        <CyberButton label="cyberpunk_" />
+      </View>
+
+      <View>
+        <Text>Button with animation activated onPress:</Text>
+        <TouchableOpacity onPress={() => btnRef.current.animate()}>
+          <CyberButton
+            ref={btnRef}
+            disableAutoAnimation
+            label="cyberpunk_"
+          />
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -69,6 +86,9 @@ Default label text style:
   fontSize: buttonHeight / 2.5
 }
 ```
+
+# CyberButton instance methods
+`animate` - will trigger single glitch animation. Useful with `disableAutoAnimation` prop.
 
 # React Native Epicode Academy
 This package is a part of [React Native Epicode Academy](https://www.youtube.com/channel/UCjeodJlopQe4b91Y-uS18Ow) YouTube series.
