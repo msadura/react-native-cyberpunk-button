@@ -3,7 +3,7 @@ Button with glitch display effect inspired by cyberpunk 2077 game webpage. Butto
 Button component is highly customisable. You can change animation params, button and text style.
 
 
-![](Example/)
+![](Example/btn_anim.gif)
 
 # Usage
 Install module:
@@ -48,7 +48,7 @@ export default function App() {
 }
 ```
 
-# CybeButton props
+# CyberButton props
 | Props                | Type          | Description  | Default      |
 | --------------------- |:-------------:| ------------ | ------------ |
 | `height` | `Integer`     | Height of the button. |`80` |
