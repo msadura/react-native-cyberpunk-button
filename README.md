@@ -51,7 +51,7 @@ export default function App() {
 # CyberButton props
 | Props                | Type          | Description  | Default      |
 | --------------------- |:-------------:| ------------ | ------------ |
-| `height` | `Integer`     | Height of the button. |`80` |
+| `buttonHeight` | `Integer`     | Height of the button. |`80` |
 | `label`  | `string` | Button text.| `''` |
 | `mainColor`  | `string` | Button background.| `#ff003c` |
 | `shadowColor`  | `string` | Glitch effect shadow and borders.| `#add8e6` |
